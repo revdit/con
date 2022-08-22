@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="{% url 'home' %}">HOME</a>
-    <a href="{% url 'about' %}">ABOUT</a>
-    <a href="{% url 'contact'%}">CONTACT</a><br />
+    <a href="{% url 'home' %}" style="color:green;">HOME</a>
+    <a href="{% url 'about' %}" style="color: green;">ABOUT</a>
+    <a href="{% url 'contact'%}" style="color: green;">CONTACT</a><br />
     {% block content %}
 
     <img src="{% static 'image/ima2.jpg' %}">
