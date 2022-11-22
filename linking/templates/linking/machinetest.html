@@ -1,0 +1,167 @@
+
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/machinetest.css'%}">
+    <style>
+
+.main1{
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        display: grid;
+        border: 2px solid black;
+      
+    }
+    .de{
+        grid-column: 1/span 4;
+        grid-row: 2/2;
+    }
+    .dpe{
+        grid-column:2/span 3;
+        grid-row: 2/2;
+    }
+    .diva{
+        opacity: 0px;
+    }
+    </style>
+</head>
+<body>
+    <div class="diva">
+    <div>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        <img src="{% static 'image/cyberlogo5.png'%}" alt="pic1 " width="300px" padding="50%">
+    </div>
+    
+    <div class="padd1"><h1><U>Machine test-CSS</U></h1></div>
+    <div class="main">
+        <table class="padd1" border="1" width="500px" hieght="100px" cellpadding="8" cellspacing="0" align="center" >
+            <tr>
+                <td>
+                    Duration
+                </td>
+                <td>
+                    3hrs
+                </td>
+            </tr>
+            <tr><td>Home Page</td>
+            <td>10Marks</td>
+        </tr>
+        <tr>
+            <td>Profile Page</td>
+            <td>15 Marks</td>
+        </tr>
+        <tr>
+            <td>Messages</td>
+            <td>15Marks</td>
+        </tr>
+        <tr>
+            <td> Total</td>
+            <td>40Marks</td>
+</tr>
+        </table>
+    <!-- <div>Duration</div>
+    <div>3hrs</div>
+    <div>Home Page</div>
+    <div>10Marks</div>
+    <div>Profile Page</div>
+    <div>15 Marks</div>
+    <div>Messages</div>
+    <div>15Marks</div>
+    <div>Total</div>
+    <div>40Marks</div> -->
+
+    </div>
+    <div class="para1"><p>Create a  social media web page similar to facebook home page. It should contain a 
+        cover page and a profile image. It should contain a navigation bar on the top and footer at the bottom. </p>
+        <p>Samples for each page are given below. Complete the design with contents as per your imagination.
+        </p></div>
+        <h1><b>Home Page:</b></h1>
+        <div class="main1">
+<div class="da"><img src="{% static 'image/cyberlogo5.png'%}" alt="pic1 "></div>
+<div class="db">Home</div>
+<div class="dc">Profile</div>
+<div class="dd">Message</div>
+
+<div class="de"><hr/><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut placeat eum reiciendis ipsum facere illum 
+    voluptatibus quod, at consequuntur blanditiis laborum dicta velit cum magnam natus temporibus. Alias, blanditiis.</p></div>
+
+
+</div>
+
+<div class="diva">
+    <div>
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        <img src="{% static 'image/cyberlogo5.png'%}" alt="pic1 " width="300px" padding="50%">
+    </div>
+
+    <h1><b>Profile Page:</b></h1>
+    <div class="main1">
+<div class="dpa"><img src="{% static 'image/cyberlogo5.png'%}" alt="pic1 "></div>
+<div class="dpb">Home</div>
+<div class="dpc">Profile</div>
+<div class="dpd">Message</div>
+<div class="dpf"><hr/><img src="{% static 'image/prof.jpg'%}" alt="" width="100px"><p>User dtails </p></div>
+<div class="dpe"><hr/><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut placeat eum reiciendis ipsum facere illum 
+voluptatibus quod, at consequuntur blanditiis laborum dicta velit cum magnam natus temporibus. Alias, blanditiis.</p></div>
+
+
+</div>
+
+<h1><b>Messages :</b></h1>
+<div class="main1">
+<div class="dpa"><img src="{% static 'image/cyberlogo5.png'%}" alt="pic1 "></div>
+<div class="dpb">Home</div>
+<div class="dpc">Profile</div>
+<div class="dpd">Message</div>
+<div class="dpf"><hr/><img src="{% static 'image/prof.jpg'%}" alt="" width="100px"><p>User dtails </p></div>
+<div class="dpe"><hr/><p>Messages</p>
+<table>
+    <tr>
+        <td><img src="{% static 'image/prof.jpg'%}" alt="" width="50px"> Ram</td>
+        <td class="bor">Hii...</td>
+
+    </tr>
+    <tr>
+        <td><img src="{% static 'image/prof.jpg'%}" alt="" width="50px">sara</td>
+        <td class="bor">How are you</td>
+
+    </tr>
+    <tr>
+        <td><img src="{% static 'image/prof.jpg'%}" alt="" width="50px">zoya</td>
+        <td class="bor">you there..?????</td>
+
+    </tr>
+</table>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+       </div>
+</body>
+</html>

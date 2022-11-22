@@ -10,7 +10,9 @@
 <body>
     <a href="{% url 'home' %}" style="color:green;">HOME</a>
     <a href="{% url 'about' %}" style="color: green;">ABOUT</a>
-    <a href="{% url 'contact'%}" style="color: green;">CONTACT</a><br />
+    <a href="{% url 'contact'%}" style="color: green;">CONTACT</a>
+    <a href="{% url 'new' %}" style="color:green;">NEW</a><br />
+<marquee >hello</marquee>
     {% block content %}
 
     <img src="{% static 'image/ima2.jpg' %}">

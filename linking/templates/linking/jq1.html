@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+   
+    
+    <div class="mb-3">
+        <label class="form-label">Product Name</label>
+        <input type="text" class="form-control w-50" id="p_name"  placeholder="Enter the product name">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea class="form-control w-50" id="description" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Quqlity</label>
+        <textarea class="form-control w-50" id="quality" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Price</label>
+        <textarea class="form-control w-50" id="price" rows="3"></textarea>
+      </div>
+      
+      
+
+
+      <button type="button"  class="btn btn-primary" onclick="add()">Add Product</button><br><br>
+      <button type="button"  class="btn btn-primary" onclick="veiw()">view Product</button><br><br>
+
+   <script>
+    function add()
+    {
+    
+        var product =document.getElementById('p_name').value
+        var description =document.getElementById('description').value
+        var quality=document.getElementById('quality').value
+       var price =document.getElementById('price').value
+
+       var new_tr = document.createElement("tr");
+       product=[]
+    
+    
+    
+     name=p_name;
+    des=description;
+    qua=quality;
+    pr=price;
+
+product.push[name,des,qua,pr]
+
+
+
+ document.localStorage.setItem('product[]', JSON.stringify(product));
+ console.log(product)
+       localStorage.setItem('k1', 'name1')
+    }
+    function view()
+    {
+
+    }
+   </script>
+
+</body>
+</html>

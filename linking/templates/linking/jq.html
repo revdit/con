@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .d1{ background-color: brown;
+
+        }
+    </style>
+</head>
+<body>
+    <p id="para" style="display: none;"> hai how are you</p>
+    <button id="btn">click</button>
+
+<div id="div1" style="background-color: green; height:200px;width:100px; position: absolute;">
+
+</div>
+<!-- <ul id="ul">
+    <li>hai</li>
+    <li>helo</li>
+    <li>how</li>
+    <li>are</li>
+    <li>you</li>
+</ul> -->
+<div class="d1"></div>
+
+
+    <script>
+    $(document).ready(function()
+    {
+     var p = $('#para').html()
+        console.log(p)
+        document.getElementById('para').innerHTML = " Chanage text"
+        $('#para').html('changetext')
+        $('#btn').click(function()
+        {
+           $('#para').hide()
+          $('#para').show()
+            $('#para').toggle()
+           $('#div1').fadeOut(3000)
+           $('#div1').fadeIn(3000)
+           $('#div1').fadeTo(2000,0.5)
+          $('#div1').toggle(3000)
+         $('#div1').slideDown()
+          $('#div1').slideUp(3000)//(display  none not use)
+          $('#div1').slideToggle()
+
+
+
+          $('#div1')
+          .fadeOut(3000)
+          .delay(5000)
+          .fadeIn(3000)
+
+
+        $('#div1').animate({
+            'height':'500px'
+        }).css('background-color','red')
+
+
+
+
+        $('#div1')
+        .animate({'left':'300px' })
+        .delay(3000)
+       .animate({'top':'200px'})
+       .delay(3000)
+       .animate({'left':'0px'})
+       .delay(3000)
+       .animate({'top':'30px'})
+
+
+
+$('#ul').addClass()
+
+        })
+    })
+
+    </script>
+</body>
+</html>

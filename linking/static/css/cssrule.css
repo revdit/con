@@ -1,0 +1,38 @@
+#p1{
+    font-size: larger;
+    color: chartreuse;
+
+}
+.p1{
+    color: brown;
+    
+}
+p{
+    display: inline;
+    visibility: hidden;
+}
+b{
+    
+display: block;
+}
+/* b{
+    visibility: hidden;
+} */
+/* img{
+    opacity: 0.3;
+} */
+img:hover{
+    opacity: 0.3;
+}
+.div1{
+    background-color: brown;
+    width: 75%;
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    /* position: relative;
+    left: 25px;
+    bottom: 25px; */
+
+}
+

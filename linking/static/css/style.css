@@ -1,0 +1,29 @@
+ 
+        #head
+        {
+            color: green;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        .p1
+        {
+            color: blue;
+            font-style: italic;
+        }
+        span{
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+        } 
+
+        /* *
+        {
+            color: blueviolet;
+        } */
+        div span
+        {
+            color: brown;
+        } 
+        .div1 p{
+            color: blue;
+        }

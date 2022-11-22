@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt1">
+    <span id="sp1"></span><br>
+    <input type="text" id="txt2">
+    <span id="sp2"></span><br>
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br>
+   
+    <input type="button" value="Add" onclick="add()"><br>
+    <span id="res"></span>
+    <script>
+ function add()
+ {
+    var first_num=Number(document.getElementById('txt1').value)
+    var second_num=Number(document.getElementById('txt1').value)
+    var operator=document.getElementById('op').value
+    var result=0
+    if(first_num==''||second_num=='')
+    {
+if(first_num=='')
+{
+    document.getElementById('sp1').innerHTML='Please enter the first number'
+}
+
+if(second_num=='')
+{
+    document.getElementById('sp2').innerHTML='Please enter the second number'
+}
+    }
+    else{
+    if(operator=='+')
+    {
+        result=first_num +  second_num
+    }
+    else if(operator=='-')
+    {
+        result=first_num - second_num
+    }
+    else if(operator=='*')
+    {
+        result=first_num * second_num
+    }
+    else if(operator=='/')
+    {
+        result=first_num / second_num
+    }
+ document.getElementById('res').innerHTML=result
+ 
+    }
+}
+
+
+    </script>
+   
+</body>
+</html>

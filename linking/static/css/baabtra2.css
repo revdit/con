@@ -1,0 +1,62 @@
+.div1{
+    background-color: rgb(72, 72, 184);
+    height: 50px;
+    width: 100%;
+}
+img[alt='pic1']{
+    height: 20px;
+    width: 30px;
+    padding-top: 10px;
+}
+#o1 option{
+    background-color: black;
+    color: white;
+}
+#t1 td{
+    color: blue;   
+}
+
+#t1 td:hover{
+color: red;
+}
+
+img[alt='pic7']
+{
+    height: 50px;
+    width: 100px; 
+}
+.div2{
+    background-color: rgb(72, 72, 184);
+    height: 500px;
+    width: 100%;
+}
+img[alt='pic8']
+{
+    margin-left: 200%;
+    padding-top: 20px;
+    
+}
+.color1{
+    color: white;
+    margin-left: 50px;
+    padding-left: 450px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#t2 td{
+
+    width: 800px;
+    height: 200px;
+    background-color:rgb(34, 45, 90);
+    font-size: 30px;
+}
+.style1{
+    margin-left: 250px;
+}
+.div3{
+    background-color: gray;
+}
+#py td{
+    background-color: white;
+
+}

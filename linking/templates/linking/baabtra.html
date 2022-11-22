@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/tra.css' %}">
+</head>
+<body>
+    <div class="div1">
+    <table style="padding-top: 10px;">
+        
+            <tr>
+                <td>
+                    
+         <img src="{% static 'image/face.png'%}"alt="pic1" >
+
+        <img src="{% static 'image/tw2.png'%}" alt="pic2">
+        <img src="{% static 'image/linkin.png' %}"alt="pic3">
+        <img src="{% static 'image/in5.png' %}" alt="pic4">
+       
+        <td class="space"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <u style="color: ;"> <b> Contact us </b> </u></td>
+        <td>
+        <img src="{% static 'image/phone.png'%}" alt="pic5"></td>
+        <td>
+        <u style="color: ;"> +918592058444</u></td>
+                </td>
+
+             </tr>
+             </table >
+             </div>
+
+
+
+
+
+
+
+             <table id="t1" tyle="padding-top: 10px;">
+             <tr>
+                <td>
+                    <img src="{% static 'image/teslogo.webp'%}"  alt="pic6" >
+                </td>
+                <td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="INTERNSHIP" style="color: blue;" id="o1" >
+                    <option value="">INTERNSHIP PROGRAMS</option>
+                    <option value="python">PYTHON TRANING</option>
+                    <option value="php">PHP TRANING</option>
+                    <option value="angular">ANGULAR TRANING</option>
+                    <option value="flutter">FLUTTER TRANING</option>
+                    <option value="web">WEB DEVELOPMENT</option>
+                </select>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLACEMENTS</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="{% url 'about1' %}"> ABOUT US </a> </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="{% url 'blog' %}"> BLOG </a> </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="{% url 'login' %}">LOGIN </a> </td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="{% static 'image/enquire.jpg' %}" alt="pic7">
+                    
+                </td>
+
+             </tr>
+             </table>
+         </table>
+         {% block content %}
+        
+         <div class="div2">
+         <table>
+          <tr>
+            <td>
+                <img src="{% static 'image/oray_logo.webp'%}" alt="pic8">
+            </td>
+          </tr>
+          </table>
+          <table>
+          <tr>
+            <td style="color: white;"class="color1">
+                We are affiliated with oray education London,UK
+            </td>
+          </tr>
+          </table>
+          <table id="t2" class="style1">
+            <tr>
+                <td>
+                   <p style="color: white;" align="center"> GETTING A SOFTWARE JOB IS SO EASY WITH OUR INTERNSHIP PROGRAMS </p>
+                
+                <p style="font-size: 20px; color:rgb(50, 11, 190);"   align="center" >
+                    Learn programming from the most trusted software trading company in calicut with highest
+                    placement record.Enroll for software courses and internship programs in Python,PHP,Angular or Flutter 
+                    to start your career.
+                </p>
+                </td>
+            </tr>
+          </table>
+         </div>
+         <div class="conting">
+            <table>
+                <tr>
+
+                    <td>
+                        <img src="{% static 'image/python.webp'%}">
+                        <a class="atag" href="">Python Training</a>
+                    </td>
+                    <td>
+                        <img src="{% static 'image/php.webp'%}"><a href="">PHP Training</a>               
+                    </td>
+                    <td>
+                        <img src="{% static 'image/angular.webp'%}"><a href="">Angular Training</a>
+                    </td>
+                    <td>
+                        <img src="{% static 'image/flutter.webp'%}"><a href="">Flutter Training</a> 
+                    </td>
+                    <td>
+                        <img src="{% static 'image/javascript.webp'%}"><a href="">Javascript Training</a>
+                    </td>
+                   
+                </tr>
+            </table>
+         </div>
+       <table  class="style2">
+        <tr>
+
+        <tr>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="font-size: 30px;"> Explore Our internship programme </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>baabtra.com offerce you courses and training programms that will enbale you to master programming in depth.
+                    Enroll and start learning with the experts in the industry.We offers php traning with laravel framework,
+                python traning with Django Framework,Angular traning and Node.js traning</p>
+            </td>
+        </tr>
+
+<div class="speciality1">
+    <table>
+    <tr>
+        <td colspan="2"> <h1 class="speciality2">Our Specialities</h1></td>
+    </tr>
+    <tr>
+        <td>
+            <div class="cs1">
+            <h4> CS Talent Show</h4>
+        <p>CS Talent show, a live event hosted by the student through his/her Facebook or Instagram or youtube channel to
+            showcase the project done by students.this event is apart of their course where the student learns how to 
+            explain the project to the outside world.Our instructors will monitor the students project and provide guidance.
+        </p>
+        </div>
+        </td>
+        <td>
+            <div class="hr1">
+            <h4>Coffee With HR</h4>
+            <p>Baabtra has launched a new initiative to connect student with IT companies(Resources to Employers).MNC HR
+                represntatives will visit Baabtra students to present their company,job opportunities,And job nature.Students 
+                will learn about the companies and have the opportunity to apply for jobs.
+            </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div class="fest">
+            <h4>Digital Fest</h4>
+            <p>Digital fest for baabtra students is a platform for students to
+                showcase their software application development skills to the companies for securing a job.                  
+            </p>
+            </div>
+        </td>
+    </tr>
+
+</table>
+</div>
+
+       </table>  
+    
+{% endblock %}   
+<div class="div5">
+    <table>
+        <tr><td>
+        
+        </td></tr>
+    </table>
+    
+</div>   
+
+       <table class="footstyle">
+        <tr>
+            <td rowspan="2" class="footstyle1">
+                <img src="{% static 'image/teslogo.webp'%}"><br>
+                <br>
+               <b>Partners with</b>
+                <br>
+                <img src="{% static 'image/foot-logo.webp'%}"><br>
+                A division of Baabte System Technologies PVT Ltd    
+             </td>
+             <td class="footstyle2">COURSES</td>
+             <td class="footstyle2">SITE MAP</td>
+             <td class="footstyle2">ADDRESS</td>
+        </tr>
+        <tr>
+            <td class="footstyle2" >Python <br>
+                <br>
+            PHP <br>
+            <br>
+            Angular <br>
+            <br>
+            Flutter
+            </td>
+            <td class="footstyle2"><br>
+                Home <br>
+                <br>
+                Placements <br>
+                <br>
+                About  <br>
+                <br>
+                Blog <br>
+                <br>
+                Contact <br>
+                <br>
+                career 
+
+            </td>
+            <td class="footstyle2">
+                CAFIT Square,5th Floor,<br />
+                Hilite Business Park,  <br>
+                Thondayad Bye-Pass, <br>
+                HiLite City ,Calicut,Kerala,India <br>
+                <br>
+                +91 859 205 8444 <br>
+                <br>
+                0495 2436990 <br>
+                    <br>
+                info@baabtra.com
+            </td>
+        </tr>
+       </table>
+       <div class="div5">
+        <table>
+            <tr>
+                <td>
+                All Rights Reserved 2022
+
+                </td>
+                <td class="footstyle3">
+                    <img src="{% static 'image/face.png'%}"alt="pic1" >
+
+        <img src="{% static 'image/tw2.png'%}" alt="pic2">
+        <img src="{% static 'image/linkin.png' %}"alt="pic3">
+        <img src="{% static 'image/in5.png' %}" alt="pic4">
+       
+                </td>
+            </tr>
+        </table>
+       </div>
+</body>
+</html>

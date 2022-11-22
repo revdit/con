@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter an item</label>
+    <input type="text" id="txt1"><br>
+    <input type="button" value="Add" onclick="add()">
+
+    <ul id="ul">
+
+    </ul>
+    <script>
+        function add() {
+
+            var result = document.getElementById('txt1').value
+            var ul = document.getElementById('ul')
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(result));
+            ul.appendChild(li);
+        }
+    </script>
+
+
+
+
+
+
+<!--     
+    <label >Password</label>
+    <input type="password" id="pa"><br>
+    <input type="checkbox" id="ch1"onclick="check()">
+    <script>
+        function check()
+        {
+            var pass=document.getElementById('pa')
+            if(pass.type=='password')
+            {
+                pass.type='text'
+            }
+            else{
+                pass.type='password'
+            }
+    
+        } -->
+<!-- 
+    </script>
+
+
+
+
+
+
+<label>Password</label>
+<input type="password" id="pa"><br>
+<input type="button" id="btn" value="Submit"onclick="submit()">
+<span id="msg"></span>
+<script>
+    function submit()
+    {
+        var pass=document.getElementById('pa').value
+        var msg=document.getElementById('msg')
+        var special_character=['#','%','*','$']
+        var sp_found=0
+        var num_found=0
+        for(var s of special_character)
+        {
+            if(pass.indexOf(s)>0)
+            {
+                sp_found=1
+                break;
+            }
+        }
+
+        for( var i=0;i<10;i++)
+        {
+            if(pass.indexOf(i)>0){
+                num_found=1
+                break
+            }
+        }
+        if(sp_found==1 && num_found==1)
+        {
+            msg.innerHTML ='strong password'
+        }
+        else{
+            msg.innerHTML ='weak password'
+            
+        }
+    }
+
+
+
+
+
+
+    
+      
+</script> -->
+</body>
+
+</html>

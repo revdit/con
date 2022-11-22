@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/facebook.css' %}">
+
+</head>
+<body>
+    
+    <div class="div1">
+        <table style="padding-top: 10px;">
+            <tr>
+                <td class="fa"> <img src="{% static 'image/facebook12.png' %}" alt="" height="30px" padding-top="1px"></td>
+               
+                <td style="padding-left:500px ; padding-top: 1px;"><a href="{% url 'fpro' %}" style="color: black;">
+                    <img src=" {% static 'image/home.png' %}" alt="" height="20px" width="20px">
+                    <img src=" {% static 'image/prof.jpg' %}" alt="" height="20px" width="20px"> 
+                    <img src=" {% static 'image/msg.png' %}" alt="" height="20px" width="20px">
+                   
+                   
+                   
+                       
+                 
+                        <td> <input type="button" value="LOGIN"> 
+                </td>
+                <td> <a href="{% url 'forgot' %}" style="color: white;"> Forgotten account? </a> </td>
+            </tr>
+          
+        </table>
+        {% block content %} 
+        
+        <div style="width:250px; height:600px; border:1px grey solid;float:left; background-color: gray;" >
+           
+        <table>           
+<tr>
+
+<td style="padding-left:70px;padding-top: 20px;"><a href="{% url 'fpro' %}" style="color: black;">
+                 <button type="submit" width="200px">Profile</button></a>
+          </td>
+          <tr>
+                     
+   
+  
+    <td style=  " padding-left:70px; padding-top: 20px;"><a href="{% url 'fmess' %}" style="color: black;">
+         <button type="submit" width="200px">Message</button></a>
+  </td>
+  </tr>
+                    <tr>
+                        <td style="padding-left:70px; padding-top: 20px; color: black;">Photos <br/></td> 
+                    </tr>
+                    <tr>
+                        <td style="padding-left:70px; padding-top: 20px; color: black;">Reviews</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:70px; padding-top: 20px; color: black;">Videos</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:70px; padding-top: 20px; color: black;">Events</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:70px;padding-top: 20px; color: black;">About</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:70px;padding-top: 20px; color: black;">Wallpaper</td>
+                    </tr>
+                
+        </table>
+        </div>
+        
+            <table style="background-color: rgb(238, 228, 228);">
+                <tr>
+                    
+                    <td  >
+                        <img src="{% static 'image/img7.jpg' %}" alt=" " width="900px" height="300px"  > </td>
+                    <td>
+                        <tr>
+                       <td style="background-color: white;"> <img src="{% static 'image/face.png' %}" alt=" " > 
+                
+                 <b style="color: black; padding-top:2px; padding-left:50px;">FACEBOOK  <br/></b> 
+                 <b style="color: black; padding-left:150px; ">@facebook.internet Company</b>
+                <!-- <b style=" background-color: blue; color: white; height: 200px; width: 200px;"> send message </b> 
+     -->
+            </td>
+                    </tr>
+                </tr>
+           
+        </table>
+        <div>
+            <table class="td2">
+                <tr>
+                    <td style="padding-left: 200px;">
+                        See more of Facebook on Facebook
+                    </td>
+                </tr>
+                    <tr>
+                    <td style="padding-left: 200px;"><button type="submit" width="200px">Login</button>
+                    <b style="color: black; padding-left: 100px;">or</b></td>
+                    <td><input type="button" value="Create an account" style="height: 30px;"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    {% endblock %} 
+</body>
+</html>

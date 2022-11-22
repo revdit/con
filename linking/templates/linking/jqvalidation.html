@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body style="background-color: rgb(128, 128, 216);">
+<div style="background-color: white; height: 900px; width: 500px;">
+    <h3 align="center" style="color: white; background-color: blue; height: 50px; padding-top: 20px;">Sign Up</h3>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text"  id="name" placeholder="Enter the name">
+                        <span id="name_sp"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age:
+                    </td>
+                    <td>
+                        <input type="number" id="age" placeholder="Enter the age">
+                        <span id="age_sp"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address:
+                    </td>
+                    <td>
+                        <textarea name="" id="add" cols="30" rows="5" style="vertical-align: top;"></textarea>
+                <span id="add_sp"></span>
+                
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                    Gender:
+                </td>
+            <td>
+                <input type="radio" value="male" name="gender" id="male">male
+                <span id="male_sp" ></span>
+                <input type="radio" value="female" name="gender" id="female">female
+                <span id="female_sp"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Qualification:
+        </td>
+            <td>
+                <select name="" id="">Qualification
+                    <option value="">SSLC</option> 
+                    <option value="">PLUS TWO</option>
+                    <option value="">DEGREE</option>
+                    <option value="">PG</option></select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone:
+            </td>
+            <td>
+                <input type="number" id="ph">
+                <span id="ph_sp"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                email
+            </td>
+            <td>
+                <input type="text" id="email">
+                <span id="email_sp"></span>
+            </td>
+            <tr>
+                <td>
+                    Username:
+                </td>
+                <td>
+                    <input type="text" id="us" >
+                    <span id="us_sp"></span>
+                </td>
+            </tr>
+        
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="text" id="pa">
+                <span id="pa_sp"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="submit"  style="background-color: blue; color: white;" id="sub" >
+                <span id="sub_sp"></span>
+            </td>
+        </tr>
+      
+            </table>
+        
+
+        </div>
+    </form>
+
+    <script>
+        $(document).ready(function()
+        {
+            $('#sub').click(function()
+            {
+                var name1 = $('#name')
+                var age1 = $('#age')
+                var add1 = $('#add')
+                var male1 = $('#male')
+                var female1 = $('#female')
+                var ph1 = $('#ph')
+                var mail = $('#email')
+                var user = $('#us')
+                var pass = $('#pa')
+                if(name1.val() == ''){
+                    $('#name_sp').html('please enter the name').css('color','red')
+                    $('#name').css('border','2px solid red')
+                }
+                if(age1.val() == ''){
+                    $('#age_sp').html('please enter the age').css('color','red')
+                    $('#age').css('border','2px solid red')
+                }
+                if(add1.val() == ''){
+                    $('#add_sp').html('please enter the Address').css('color','red')
+                    $('#add').css('border','2px solid red')
+                }
+                if(male1.checked==false && female1.checked==false){
+                    $('#female_sp').html('please enter the Qualification').css('color','red')
+                    $('#fename').css('border','2px solid red')
+                }
+           
+                if(ph1.val() == ''){
+                    $('#ph_sp').html('please enter the Phone number').css('color','red')
+                    $('#ph').css('border','2px solid red')
+                }
+                if(mail.val() == ''){
+                    $('#email_sp').html('please enter the emil').css('color','red')
+                    $('#email').css('border','2px solid red')
+                }
+           
+                if(user.val() == ''){
+                    $('#us_sp').html('please enter the username').css('color','red')
+                    $('#us').css('border','2px solid red')
+                }
+           
+                if(pass.val() == ''){
+                    $('#pa_sp').html('please enter the password').css('color','red')
+                    $('#pa').css('border','2px solid red')
+                }
+           
+           
+           
+            })
+        })
+    </script>
+</body>
+</html>

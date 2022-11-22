@@ -1,0 +1,11 @@
+
+p,div{
+    color: brown;
+}
+span{
+    color: chartreuse;
+    font-size: 30px;
+}
+div span{
+    color: inherit;
+}

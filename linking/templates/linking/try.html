@@ -1,3 +1,5 @@
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/img.css' %}">
 </head>
 <body>
-    create first time
-    <h1>haaaaaaai</h1>
-    <p>my cource</p>
+<img src="{% static 'image/ima2.jpg' %}" alt="pic1"><br />
+<img src="{% static 'image/img3.jpg' %}" alt="pic2"><br />
+<img src="{% static 'image/laptop.jpg' %}" alt="pic3"><br />
+<input type="password" value="=password" placeholder="password">
+<input type="text" value="name" placeholder="name">
 </body>
 </html>

@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/baabtra2.css' %}">
+</head>
+<body>
+    <div class="div1">
+        <table>
+            <tr>
+                <td>
+                 <img src="{% static 'image/face.png'%}"alt="pic1" >
+                  <img src="{% static 'image/tw2.png'%}" alt="pic1">
+                <img src="{% static 'image/linkin.png' %}"alt="pic1">
+                 <img src="{% static 'image/in5.png' %}" alt="pic1">
+                 </td>
+                 <td style="color: white; padding-left:800px;">
+                    contact us  <img src="{% static 'image/phone.png'%}" alt="pic1"> +918592058444
+                 </td>
+                 </tr>
+                 </table>
+                    </div>
+    <table id="t1">
+        <tr>
+            <td>
+                <img src="{% static 'image/teslogo.webp'%}"  alt=" " >
+            </td>
+            <td  style="padding-left: 30px;">
+                <select name="INTERNSHIP" style="color: blue;" id="o1" >
+                    <option value="">INTERNSHIP PROGRAMS</option>
+                    <option value="python">PYTHON TRANING</option>
+                    <option value="php">PHP TRANING</option>
+                    <option value="angular">ANGULAR TRANING</option>
+                    <option value="flutter">FLUTTER TRANING</option>
+                    <option value="web">WEB DEVELOPMENT</option>
+                </select>
+            </td>
+            <td style="padding-left: 30px;">PLACEMENTS</td>
+            <td style="padding-left: 30px;"> <a href="{% url 'about1' %}" style="color: blue;" id="t2" >  </a>ABOUT US</td>
+            <td style="padding-left: 30px;"><a href="{% url 'blog' %}" style="color: blue;" ></a>BLOG</td>
+            <td style="padding-left: 30px;"><a href="{% url 'login' %}"style="color: blue;" > </a> LOGIN</td>
+            <td style="padding-left: 30px;"> <img src="{% static 'image/enquire.jpg' %}" alt="pic7"></td>
+        </tr>
+    </table>
+    
+    <div class="div2">
+    <table>
+        <tr>
+            <td>
+                <img src="{% static 'image/oray_logo.webp'%}" alt="pic8">
+            </td>
+          </tr>
+    </table>
+    <table>
+        <tr>
+          <td class="color1">
+              We are affiliated with oray education London,UK
+          </td>
+        </tr>
+        </table>
+        <table id="t2" class="style1">
+          <tr>
+              <td>
+                 <p style="color: white;" align="center"> GETTING A SOFTWARE JOB IS SO EASY WITH OUR INTERNSHIP PROGRAMS </p>
+              
+              <p style="font-size: 20px; color:rgb(50, 11, 190);"   align="center" >
+                  Learn programming from the most trusted software trading company in calicut with highest
+                  placement record.Enroll for software courses and internship programs in Python,PHP,Angular or Flutter 
+                  to start your career.
+              </p>
+              </td>
+          </tr>
+        </table>
+       </div>
+       <div class="div3">
+        <table>
+            <tr>
+                <td id="py">
+                    <img src="{% static 'image/python.webp'%}" alt="pic9"><br/>
+                    <a class="atag" href=""></a>Python Training
+                </td>
+            </tr>
+        </table>
+       </div>
+
+
+
+
+
+
+
+</body>
+</html>

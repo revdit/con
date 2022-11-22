@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <table>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text"  id="name">
+                <span id="name_sp"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Age:
+            </td>
+            <td>
+                <input type="text" id="age">
+                <span id="age_sp"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            Gender:
+        </td>
+    <td>
+        <input type="radio" value="male" name="gender" id="male">male
+        <span id="male_sp" ></span>
+        <input type="radio" value="female" name="gender" id="female">female
+        <span id="female_sp"></span>
+    </td>
+</tr>
+<tr>
+    <td>
+        Phone:
+    </td>
+    <td>
+        <input type="text" id="ph">
+        <span id="ph_sp"></span>
+    </td>
+</tr>
+<tr>
+    <td>
+        email
+    </td>
+    <td>
+        <input type="text" id="email">
+        <span id="email_sp"></span>
+    </td>
+    <tr>
+        <td>
+            Username:
+        </td>
+        <td>
+            <input type="text" id="us" >
+            <span id="us_sp"></span>
+        </td>
+    </tr>
+
+</tr>
+<tr>
+    <td>
+        Password:
+    </td>
+    <td>
+        <input type="text" id="pa">
+        <span id="pa_sp"></span>
+    </td>
+</tr>
+<tr>
+    <td>
+    <input type="button" value="submit" id="sub" onclick="return validate()">
+    <span id="sub_sp"></span>
+
+    </td>
+</tr>
+    </table>
+    </form>
+    <script>
+        function validate(){
+
+        
+        var name1=document.getElementById('name')
+        var age1=document.getElementById('age')
+        var male1=document.getElementById('male')
+        var female1=document.getElementById('female')
+        var ph1=document.getElementById('ph')
+        var email1=document.getElementById('email')
+        var user1=document.getElementById('us')
+        var pass1=document.getElementById('pa')
+        
+
+
+        var name2=document.getElementById('name_sp')
+        var age2=document.getElementById('age_sp')
+        var male2=document.getElementById('male_sp')
+        var female2=document.getElementById('female_sp')
+        var ph2=document.getElementById('ph_sp')
+        var email2=document.getElementById('email_sp')
+        var user2=document.getElementById('us_sp')
+        var pass2=document.getElementById('pa_sp')
+        var nameRegex = /^[a-zA-Z\-]+$/;
+        
+
+
+        if(name1.value=='')
+        {
+            name2.innerHTML='Please Enter the Name'
+            name2.style.color='green'
+            name1.style.border='1px solid red'
+        }
+     if(age1.value=='')
+        {
+            age2.innerHTML='Please enter the Age'
+            age2.style.color='green'
+            age1.style.border='1px solid red'
+        }
+     if(ph1.value=='')
+        {
+            ph2.innerHTML='Please enter the Phone Number'
+            ph2.style.color='green'
+            ph1.style.border='1px solid red'
+        }
+     if(email1.value=='')
+        {
+            email2.innerHTML='Please enter the Email id'
+            email2.style.color='green'
+            email1.style.border='1px solid red'
+        }
+     if(user1.value=='')
+        {
+            user2.innerHTML='Please enter the Username'
+            user2.style.color='green'
+            user1.style.border='1px solid red'
+        }
+     if(pass1.value=='')
+        {
+            pass2.innerHTML='Please enter the Password'
+            pass2.style.color='green'
+            pass1.style.border='1px solid red'
+        }
+        if(male1.checked==false && female1.checked==false){
+            female2.innerHTML='Please Enter the Gender'
+            female2.style.color='green'
+           
+        }
+        if(pass1.value.length<8)
+        {
+            pass2.innerHTML="Password must be 8 Characters"
+        }
+    }
+
+
+        
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

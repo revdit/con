@@ -1,0 +1,32 @@
+.div2{
+    grid-area: d2;
+}
+.div3{
+    grid-area: d3;
+}
+.div4{
+    grid-area: d4;
+}
+.div5{
+    grid-area: d5;
+
+}
+.div6{
+    grid-area: d6;
+}
+.div7{
+    grid-area: d7;
+}
+.div1{ 
+    display: grid;
+    background-color: blue;
+    height: 100vh;
+    border: 3px rgb(238, 68, 17) solid;
+    grid-template-areas: d2 d3 d4 d5 d6 
+    d2 d3 d3  d3 d4 d4 
+    d2 d5 d5 d5 d5 d5;
+}
+.div1 div{
+    background-color: rgb(214, 226, 43);
+    border: 4px black solid;
+}

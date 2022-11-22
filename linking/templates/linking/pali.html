@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+    
+//         var str=prompt("plase enter the string")
+//         var len=str.length
+//         for(i=0;i<len/2;i++)
+//         {
+    
+//         if (str[i] != str[len - 1 - i])
+// {
+//         console.log("not palindrom")
+//         break;
+// }
+// else
+//      {
+//         console.log("string is palindrom")
+//     }
+// }
+
+
+        // var r=0
+        // var sum=0
+        // var n=Number(prompt("enter a number"))
+        // var t=n
+        // while(n>0)
+        // {
+        //     r=n%10;
+        //     sum=(sum*10)+r;
+        //     n=parseInt(n/10)
+           
+        // }
+        // if(sum==t){
+        //     console.log('palindrom')
+
+        // }
+        // else{
+        // console.log('not palindrom')
+        // }
+      //fibonacci series
+
+// var num1 = 0, num2 = 1 ,j; 
+// var count,sum; 
+// count=Number(prompt("Enter the number"))
+// console.log("The First term of fibonacci series are ",count)
+// for (j= 0;j<count;j++) 
+// { 
+// if ( j <= 1 ) 
+// sum = j; 
+// else 
+// { 
+// sum = num1 + num2; 
+// num1 = num2; 
+// num2 = sum; 
+// } 
+// console.log(sum)
+// } 
+
+
+
+
+
+// array number palindrom
+var rev=0
+var array1=[21,121,345,343,546,77]
+var temp=0
+var flag=0
+for(i=0;i<array1.length;i++)
+{
+    temp=array1[i]
+    rev=0
+    while(temp>0)
+    {
+    r=temp%10
+    rev=(rev*10)+r
+    temp=parseInt(temp/10)
+    }
+    if(rev==array1[i]){
+        console.log(array1[i],'is palindrom')
+    }
+}
+
+ </script>
+</body>
+</html>

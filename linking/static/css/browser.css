@@ -1,0 +1,27 @@
+div{
+    /* height: 100px; */
+    width: 100px;
+    /* boarder-left-width:2px ;
+    boarder-right-width:2px ;
+    boarder-top-width:2px ;
+    boarder-bottom-width:2px ; */
+
+
+
+    /* border-width: 2px 3px 4px 5px;
+    border-style: double dotted groove dashed;
+
+    border-color: darkgoldenrod aqua chocolate  darkorchid; */
+border: 2px solid red;
+/* margin: auto; */
+padding: 30px;
+margin-top: 50px;
+margin-left: 50px;
+min-height: 10px;
+max-height: 200px;
+overflow: scroll;
+
+
+
+
+}

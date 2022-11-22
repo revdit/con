@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+    <body>
+        <div style="background-color: rgb(8, 51, 8); height:50px; width:100%;">
+            <p style="padding-left: 550px;padding-top: 15px; color:rgb(241, 236, 236); font-family:'Times New Roman', Times, serif; font-size: 20px;"><b>To Do App</b></p>
+        
+        </div>
+        <div style="background-color: rgb(165, 201, 201); height:30px;width:100%;">
+            <p style="padding-left: 500px;padding-top: 5px; font-family:'Times New Roman', Times, serif; font-size: 20px;">Welcome<b>AnonymousUser!</b></p>
+        
+        </div>
+        <div  style="background-color: rgb(162, 230, 162);  height:500px; width:100%; padding-left: 200px;padding-top: 50px;">
+            <div class="form-control w-75"id="div1" style="background-color: rgb(11, 206, 109);  height:300px; width:80%; ">
+        
+                <div class="mb-3" style="width:500px; ">
+                    <table>
+                        <tr>
+                            <td style="padding-top: 150px;">
+                                <input type="text"  id="title"  placeholder="Title">
+                                
+                            </td>
+                            <td style="padding-top: px;">
+                                <textarea name="" id="description" cols="30" rows="8" placeholder="Description"></textarea>
+                            
+                                
+                            </td>
+                            <td style="padding-top:100px;">
+                                <button type="submit"  class="btn btn-primary" id="button" onclick="save()" style="width: 200px;">SAVE</button>
+                            <span id="msg"></span>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                   </div>
+           </div>
+
+   
+    <table  id="todotb" class="table table-striped w-50"style="border: 1px solid black;">
+        <tr>
+    
+            <th>Title</th>
+            <th colspan="2">description</th>
+        
+            
+            
+        </tr>
+    </table>
+    <script>
+
+
+
+
+    
+        var rowno = 1
+        function save()
+
+        {
+var title1 =document.getElementById('title')
+var description1 =document.getElementById('description')
+var msg =document.getElementById('msg')
+
+if(title1.value==''||description1.value=='')
+{
+msg.innerHTML='please enter the value'
+msg.style.color='green'
+ }
+ else{
+
+var todotb1=document.getElementById('todotb')
+var new_tr = document.createElement("tr"); 
+
+var rowid = 'row'+rowno 
+new_tr.setAttribute('id',rowid) 
+rowno++
+
+ var title2=new_tr.appendChild(document.createElement('td'));
+var description2=new_tr.appendChild(document.createElement('td'));
+var actn=new_tr.appendChild(document.createElement('td'));
+todotb1.appendChild(new_tr)
+
+title2.innerHTML=title1.value
+description2.innerHTML = description1.value
+actn.innerHTML = '<button class="btn btn-outline-primary" onclick="del_task()">Delete</button>'
+title1.value=''
+description1.value=''
+
+  }
+        }
+  function del_task()
+  {
+    var selected_rowid=event.target.parentNode.parentNode
+ document.getElementById('todotb').removeChild(selected_rowid)
+  }
+ </script>
+</body>
+</html>
